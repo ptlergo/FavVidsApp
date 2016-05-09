@@ -17,6 +17,7 @@
     "resourcejs": "^1.2.0"
   },
   "devDependencies": {
-    "dotenv": "^2.0.0"
+    "dotenv": "^2.0.0",
+    "node-restful": "^0.2.5"
   }
 }
