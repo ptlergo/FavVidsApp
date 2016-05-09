@@ -26,6 +26,26 @@ angular
         templateUrl: 'views/videos.html',
         controller: 'VideosCtrl'
       })
+      .when('/create/video', {
+        templateUrl: 'views/video-add.html',
+        controller: 'VideoAddCtrl'
+      })
+      .when('/video/:id', {
+        templateUrl: 'views/video-view.html',
+        controller: 'VideoViewCtrl'
+      })
+      .when('/video/:id/delete', {
+        templateUrl: 'views/video-delete.html',
+        controller: 'VideoDeleteCtrl'
+      })
+      .when('/video/:id/edit',{
+        templateUrl: 'views/video-edit.html',
+        controller: 'VideoEditCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+    })
       .factory('VideoRestangular', function(Restangular){
 
         return Restangular.withConfig(function(RestangularConfigurer){
@@ -38,8 +58,4 @@ angular
       .factory('Video', function(VideoRestangular){
 
         return VideoRestangular.service('video');//points to url in api
-      })
-      .otherwise({
-        redirectTo: '/'
       });
-  });
