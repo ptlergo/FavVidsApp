@@ -5,9 +5,9 @@ module.exports=function(app, route){
   //setup the controller for REST
   const rest=restful.model(
 
-    'movie',
+    'video',
     //defined in server.js as it requires our model registry ('models/index.js')
-    app.models.movie
+    app.models.video
 
   ).methods(['get', 'put', 'post', 'delete']); //pass in all methods we need for our api
 

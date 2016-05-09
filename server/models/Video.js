@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 
 //create mongoose Schema
-const MovieSchema=new mongoose.Schema({
+const VideoSchema=new mongoose.Schema({
 
   title: {
     type: String,
@@ -14,4 +14,4 @@ const MovieSchema=new mongoose.Schema({
 });
 
 //export the model Schema for model to be required
-module.exports=MovieSchema;
+module.exports=VideoSchema;

@@ -7,7 +7,6 @@
     <meta name="author" content="Patrick Funom Tunga-Lergo">
     <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="Angular, Patrick, Funom, Tunga-Lergo, HTML, CSS, NODE">
-    <meta http-equiv="refresh" content="30">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -43,7 +42,7 @@
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/videos">Videos</a></li>
+              <li><a href="#/videos">Videos</a></li>
             </ul>
           </div>
         </div>
@@ -79,12 +78,15 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/videos.js"></script>
         <!-- endbuild -->
 </body>
 </html>

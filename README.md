@@ -29,7 +29,11 @@ using express
 using mongoose
 - create schema with title, and url parameters as strings
 
-- Patrick Funom Tunga-Lergo
+using restangular
+- fetch data from local server
+- reconfig default 'id' to accept '_id '
+- getList()
+  - $object to dynamically populate result: $scope.videos=Video.getList().$object
 
 using lodash
 - _.each
@@ -39,3 +43,5 @@ numbers, objects, strings, etc. Lodash’s modular methods are great for:
 Iterating arrays, objects, & strings
 Manipulating & testing values
 Creating composite functions
+
+- Patrick Funom Tunga-Lergo
