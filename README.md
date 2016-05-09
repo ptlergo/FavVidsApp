@@ -2,7 +2,19 @@
 
 MEAN stack application with CRUD capability.
 
-Yeoman, Grunt, Bower
+Yeoman
+- npm install -g yo
+- npm install -g yo-generator-angular
+- 'yo angular'
+- rest-angular instead of angular-resource.js
+
+Grunt
+- npm install -g grunt-cli
+  - install to run in any directory
+- 'grunt serve'
+
+ Bower
+ -'bower install'
 
 using node-restful
 - takes mongoose model and converts it to REST API
