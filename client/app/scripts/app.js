@@ -18,7 +18,10 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+      })
+      .when('/videos', {
+        templateUrl: 'views/videos.html',
+        controller: 'VideosCtrl'
       })
       .otherwise({
         redirectTo: '/'
