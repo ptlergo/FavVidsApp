@@ -63,4 +63,25 @@ angular
       .factory('Video', function(VideoRestangular){
 
         return VideoRestangular.service('video');//points to url in api
+      })
+      //create a directive with tag name youtube
+      .directive('youtube', function(){
+
+        return{
+                  //restrict to element tag
+                  restrict: 'E',
+                  //scope variable to pass in source
+                  scope: {
+                          src: '='
+                         },
+                  //custom template that replaces element with styling
+                  templateUrl: 'views/youtube.html'
+      };
+      })
+      //allows youtube url to be passed as a resource
+      //pipe src in youtube.html
+      .filter('trusted', function($sce){
+        return function(url){
+          return $sce.trustAsResourceUrl(url);
+        };
       });

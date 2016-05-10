@@ -7,6 +7,11 @@ Yeoman
 - npm install -g yo-generator-angular
 - 'yo angular'
 - rest-angular instead of angular-resource.js
+- quick CRUD
+  - yo angular:route video-add --uri=create/video
+  - yo angular:route video-view --uri=video/:id
+  - yo angular:route video-delete --uri=video/:id/delete
+  - yo angular:route video-edit --uri=video/:id/edit
 
 Grunt
 - npm install -g grunt-cli
@@ -20,6 +25,11 @@ using node-restful
 - takes mongoose model and converts it to REST API
 - auto does CRUD
 
+using a directive for youtube
+- create a directive for youtube urls to appear in iframe
+- directive('youtube', function(){})...
+- use filter('trusted', function()) to allow youtube resource
+
 using body-parser
 - urlencoded to allow proper url syntax to be POSTED
 
@@ -32,6 +42,9 @@ using mongoose
 using restangular
 - fetch data from local server
 - reconfig default 'id' to accept '_id '
+-one()
+  - creating a restangular object from $routeParams.id
+- get()
 - getList()
   - $object to dynamically populate result: $scope.videos=Video.getList().$object
 
