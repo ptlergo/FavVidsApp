@@ -1,4 +1,4 @@
-[![BuildStatus](https://travis-ci.org/mgonto/restangular.svg?branch=master)](https://travis-ci.org/mgonto/restangular)
+[![BuildStatus](https://travis-ci.org/ptlergo/FavVidsApp.svg?branch=master)](https://travis-ci.org/ptlergo/FavVidsApp)
 
 # FavVidsApp
 
