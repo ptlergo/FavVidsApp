@@ -1,32 +1,42 @@
+[![BuildStatus](https://travis-ci.org/mgonto/restangular.svg?branch=master)](https://travis-ci.org/mgonto/restangular)
+
 # FavVidsApp
 
 ## MEAN stack application with CRUD capability.
 
-### [Yeoman]
+### [Yeoman](http://yeoman.io/learning/)
+```javascript
 - npm install -g yo
 - npm install -g yo-generator-angular
-- **'yo angular'**
+```
+```javascript
+  yo angular
+```
 - **rest-angular instead of angular-resource.js**
 - quick CRUD
-  *- yo angular:route video-add --uri=create/video
-  - yo angular:route video-view --uri=video/:id
-  - yo angular:route video-delete --uri=video/:id/delete
-  - yo angular:route video-edit --uri=video/:id/edit*
+```javascript
+  yo angular:route video-add --uri=create/video
+  yo angular:route video-view --uri=video/:id
+  yo angular:route video-delete --uri=video/:id/delete
+  yo angular:route video-edit --uri=video/:id/edit
+  ```
 
-### [Grunt]
+### [Grunt](http://gruntjs.com/getting-started)
 >install to run in any directory
+
 ```javascript
 npm install -g grunt-cli
 
 grunt serve
 ```
 
-### [Bower]
+### [Bower](http://bower.io/)
+
 ```javascript
 bower install
 ```
 
-##### [node-restful]
+##### [node-restful](https://github.com/baugarten/node-restful)
 - takes mongoose model and converts it to REST API
 - auto does CRUD
 
@@ -71,7 +81,7 @@ bower install
   app.use(body_parser.urlencoded({extended: true}));
 ```
 
-##### [express]
+##### [express](http://expressjs.com/)
 
 ##### [mongoose](http://mongoosejs.com/docs/)
 - create VideoSchema
