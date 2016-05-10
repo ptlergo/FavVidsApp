@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('clientApp')
-.controller('VideoDeleteCntrl', function($scope, $location, Video, $routeParams){
+.controller('VideoDeleteCtrl', function($scope, $location, Video, $routeParams){
 
   //grab the object from locating it's route parameter
   //store in variable video to be deleted in deleteVideo function

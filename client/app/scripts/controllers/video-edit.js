@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('clientApp')
-.controller('VideoEditCtrl', function($scope, $location, Video, $routeParams){
+.controller('VideoEditCtrl', function($scope, $routeParams, Video, $location ){
 
   $scope.editVideo=true;
 
@@ -14,7 +14,7 @@ angular.module('clientApp')
     //stores grabbed object into declared object
     $scope.video=video;
     //call saveVideo function from video-add
-    $scope.videoSave=function(){
+    $scope.saveVideo=function(){
 
       //save the promised object into video object from locating the object's id
       $scope.video.save().then(function(){
