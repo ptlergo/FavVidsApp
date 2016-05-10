@@ -14,6 +14,7 @@ angular
     'ngRoute',
     'restangular'
   ])
+  //configure our nested views
   .config(function ($routeProvider, RestangularProvider) {
 
     RestangularProvider.setBaseUrl('http://localhost:3000');
@@ -46,9 +47,13 @@ angular
         redirectTo: '/'
       });
     })
-      .factory('VideoRestangular', function(Restangular){
+    //factory for Videos
+    //allows fetching of list
+    .factory('VideoRestangular', function(Restangular){
 
+        //accept '_id' instead of default 'id' in Restangular
         return Restangular.withConfig(function(RestangularConfigurer){
+
           RestangularConfigurer.setRestangularFields({
             id: '_id'
           });

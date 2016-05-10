@@ -17,7 +17,7 @@ angular.module('clientApp')
 
     });
   };
-
+    //redirect back to video page
     $scope.back=function(){
 
       $location.path('/video/'+$routeParams.id);
