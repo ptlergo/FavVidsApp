@@ -1,4 +1,3 @@
-[![BuildStatus](https://travis-ci.org/ptlergo/FavVidsApp.svg?branch=master)](https://travis-ci.org/ptlergo/FavVidsApp)
 
 # FavVidsApp
 
