@@ -1,4 +1,3 @@
-[![BuildStatus](https://travis-ci.org/mgonto/restangular.svg?branch=master)](https://travis-ci.org/mgonto/restangular)
 
 # FavVidsApp
 
